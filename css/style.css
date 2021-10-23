@@ -9,6 +9,8 @@
   --logo-primary-color: #2196f3;
   --logo-header-color: #000000;
   --logo-footer-color: #ffffff;
+  /* primary-color-icons */
+  --icons-primary-color: #afb1b8;
   /* btn-color */
   --background-btn-color: #f5f4fa;
 }
@@ -129,6 +131,8 @@ body {
 }
 
 .contact-item {
+  display: flex;
+  align-items: center;
   color: var(--second-text-color);
 }
 
@@ -146,12 +150,30 @@ body {
   color: var(--accent-color);
 }
 
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+}
+.icon-tel {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
 /* ===============hero================ */
 .hero {
   padding: 200px 0;
   text-align: center;
   background-color: #2f303a;
+  background-image: url(../images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 .hero-title {
   width: 696px;
   font-weight: 900;
@@ -214,6 +236,14 @@ body {
 
   color: var(--second-text-color);
 }
+
+.advantage-icon {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--background-btn-color);
+}
 /* ===============what we do================= */
 .work-section {
   padding-top: 0;
@@ -252,8 +282,8 @@ body {
 }
 
 .team-name {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .team-name {
@@ -270,7 +300,39 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+/* ================customers========== */
+.customers-title {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
 
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 94px;
+}
+
+.customers-item {
+  border: 1px solid var(--icons-primary-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-icon {
+  border-radius: 10px;
+  width: 170px;
+  height: 92px;
+  fill: var(--icons-primary-color);
+}
+.company {
+  padding: 25px 65px 26px 62px;
+}
 /* =================footer============= */
 .logo-footer {
   display: inline-block;
