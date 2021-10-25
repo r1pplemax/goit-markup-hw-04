@@ -30,6 +30,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -79,10 +84,6 @@ body {
   list-style: none;
 }
 
-.link {
-  text-decoration: none;
-}
-
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -96,6 +97,7 @@ body {
 .header-container {
   display: flex;
 }
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -124,6 +126,11 @@ body {
   color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
 .contact-list {
   align-items: center;
   margin-left: auto;
@@ -141,7 +148,8 @@ body {
 }
 
 .contact-link {
-  display: block;
+  display: flex;
+  align-items: center;
   color: var(--second-text-color);
   padding: 32px 0px;
 }
@@ -150,14 +158,26 @@ body {
   color: var(--accent-color);
 }
 
-.contact-link:hover .icon-header,
-.contact-link:focus .icon-header {
+.contact-link:hover .icon-mail,
+.contact-link:focus .icon-mail {
   fill: var(--accent-color);
 }
 
-.icon-header {
+.contact-link:hover .icon-tel,
+.contact-link:focus .icon-tel {
+  fill: var(--accent-color);
+}
+
+.icon-mail {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.icon-tel {
+  width: 10px;
+  height: 16px;
   margin-right: 10px;
   fill: #757575;
 }
@@ -166,8 +186,12 @@ body {
 .hero {
   padding: 200px 0;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/background-image.jpg);
   background-color: #2f303a;
-  background-image: url(../images/background-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -237,9 +261,16 @@ body {
 }
 
 .advantage-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.advantage-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px;
   background-color: var(--background-btn-color);
 }
@@ -281,6 +312,8 @@ body {
 }
 
 .team-item {
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--third-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -290,17 +323,12 @@ body {
 }
 
 .team-name {
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 .team-prof {
   font-size: 16px;
@@ -347,22 +375,22 @@ body {
 }
 /* ================customers========== */
 .customers-title {
+  font-weight: 700;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .customers-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 94px;
 }
 
 .customers-item {
-  border: 1px solid var(--icons-primary-color);
-  border-radius: 4px;
-  padding: 16px 32px;
   width: 170px;
   height: 92px;
 }
@@ -371,10 +399,29 @@ body {
   margin-right: 30px;
 }
 
+.customers-logo-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icons-primary-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers-logo-link:hover,
+.customers-logo-link:focus {
+  border-color: var(--accent-color);
+}
 .customers-icon {
   width: 106px;
   height: 60px;
   fill: var(--icons-primary-color);
+}
+.customers-logo-link:hover .customers-icon,
+.customers-logo-link:focus .customers-icon {
+  fill: var(--accent-color);
 }
 .company {
   padding: 25px 65px 26px 62px;
@@ -399,12 +446,6 @@ body {
   margin-right: 70px;
 }
 
-.social-item {
-  width: 44px;
-  height: 44px;
-  margin-right: 20px;
-}
-
 .social-item:last-child {
   margin-right: 0;
 }
@@ -423,8 +464,8 @@ body {
   background-color: var(--logo-primary-color);
 }
 .footer-social-title {
-  width: 145px;
-  height: 16px;
+  font-size: 14px;
+  text-align: left;
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--logo-footer-color);

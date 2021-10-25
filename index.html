@@ -24,25 +24,25 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
-          <a href="" class="header-logo logo link"
+          <a href="" class="header-logo logo"
             >Web<span class="logo-dark">Studio</span>
           </a>
           <ul class="header-list">
             <li class="header-item">
-              <a href="" class="header-link link">Студия</a>
+              <a href="./index.html" class="header-link current">Студия</a>
             </li>
             <li class="header-item">
-              <a href="./portfolio.html" class="header-link link">Портфолио</a>
+              <a href="./portfolio.html" class="header-link">Портфолио</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link link">Контакты</a>
+              <a href="" class="header-link">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="contact-list">
           <li class="contact-item">
-            <a href="mailto:info@devstudio.com" class="contact-link link"
-              ><svg class="icon-header">
+            <a href="mailto:info@devstudio.com" class="contact-link"
+              ><svg class="icon-mail">
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-envelope"
                 ></use>
@@ -51,8 +51,8 @@
             >
           </li>
           <li class="contact-item">
-            <a href="tel:+380961111111" class="contact-link link">
-              <svg class="icon-header">
+            <a href="tel:+380961111111" class="contact-link">
+              <svg class="icon-tel" width="10px" height="16px">
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-smartphone"
                 ></use>
@@ -75,11 +75,13 @@
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantage-list">
             <li class="advantage-item">
-              <svg class="advantage-icon">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-antenna"
-                ></use>
-              </svg>
+              <div class="advantage-icons-container">
+                <svg class="advantage-icon">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-antenna"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="advantage-title">Внимание к деталям</h3>
               <p class="advantage-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -87,9 +89,13 @@
               </p>
             </li>
             <li class="advantage-item">
-              <svg class="advantage-icon">
-                <use href="./images/icons.svg/symbol-defs.svg#icon-clock"></use>
-              </svg>
+              <div class="advantage-icons-container">
+                <svg class="advantage-icon">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-clock"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="advantage-title">Пунктуальность</h3>
               <p class="advantage-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -97,11 +103,13 @@
               </p>
             </li>
             <li class="advantage-item">
-              <svg class="advantage-icon">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-diagram"
-                ></use>
-              </svg>
+              <div class="advantage-icons-container">
+                <svg class="advantage-icon">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-diagram"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="advantage-title">Планирование</h3>
               <p class="advantage-text">
                 Равным образом консультация с широким активом в значительной
@@ -109,11 +117,13 @@
               </p>
             </li>
             <li class="advantage-item">
-              <svg class="advantage-icon">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-astronaut"
-                ></use>
-              </svg>
+              <div class="advantage-icons-container">
+                <svg class="advantage-icon">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-astronaut"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="advantage-title">Современные технологии</h3>
               <p class="advantage-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -354,51 +364,63 @@
           </ul>
         </div>
       </section>
-      <section class="regular-customers">
+      <section class="section">
         <div class="container">
           <h2 class="customers-title">Постоянные клиенты</h2>
           <ul class="customers-list">
             <li class="customers-item">
-              <svg class="customers-icon ya-and-go">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-company-ya-and-go"
-                ></use>
-              </svg>
+              <a href="" class="customers-logo-link"
+                ><svg class="customers-icon ya-and-go">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-company-ya-and-go"
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li class="customers-item">
-              <svg class="customers-icon">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-company-tagline-here"
-                ></use>
-              </svg>
+              <a href="" class="customers-logo-link"
+                ><svg class="customers-icon">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-company-tagline-here"
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li class="customers-item">
-              <svg class="customers-icon">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-company-company"
-                ></use>
-              </svg>
+              <a href="" class="customers-logo-link"
+                ><svg class="customers-icon">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-company-company"
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li class="customers-item">
-              <svg class="customers-icon">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-company-foster-peters"
-                ></use>
-              </svg>
+              <a href="" class="customers-logo-link"
+                ><svg class="customers-icon">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-company-foster-peters"
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li class="customers-item">
-              <svg class="customers-icon">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-company-brand"
-                ></use>
-              </svg>
+              <a href="" class="customers-logo-link"
+                ><svg class="customers-icon">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-company-brand"
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li class="customers-item">
-              <svg class="customers-icon">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-company-company-tagline"
-                ></use>
-              </svg>
+              <a href="" class="customers-logo-link"
+                ><svg class="customers-icon">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-company-company-tagline"
+                  ></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
