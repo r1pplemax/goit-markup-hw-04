@@ -272,6 +272,7 @@ body {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  border-radius: 4px;
   background-color: var(--background-btn-color);
 }
 /* ===============what we do================= */
@@ -376,14 +377,12 @@ body {
 /* ================customers========== */
 .customers-title {
   font-weight: 700;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  color: var(--primary-text-color);
 }
 
 .customers-list {
@@ -405,7 +404,6 @@ body {
   height: 100%;
   border: 1px solid var(--icons-primary-color);
   border-radius: 4px;
-  padding: 16px 32px;
   justify-content: center;
   align-items: center;
 }
